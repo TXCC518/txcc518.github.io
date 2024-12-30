@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用户中心项目 | 荔下一个Flag</title><meta name="author" content="长安的荔枝"><meta name="copyright" content="长安的荔枝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="进度 视频 20 未开始  遇到的问题mybatis 与 mybatis-plus 冲突 NoSuchMethodError: org.apache.ibatis.session.Configuration.setArgNameBasedConstructorAutoMapping(Z) 这个错误表示 setArgNameBasedConstructorAutoMapping mybatis 中这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用户中心项目">
+<meta property="og:url" content="https://notion-hexo.vercel.app/notion-use-center/">
+<meta property="og:site_name" content="荔下一个Flag">
+<meta property="og:description" content="进度 视频 20 未开始  遇到的问题mybatis 与 mybatis-plus 冲突 NoSuchMethodError: org.apache.ibatis.session.Configuration.setArgNameBasedConstructorAutoMapping(Z) 这个错误表示 setArgNameBasedConstructorAutoMapping mybatis 中这">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1608.jpg">
+<meta property="article:published_time" content="2024-12-30T09:09:49.659Z">
+<meta property="article:modified_time" content="2024-12-30T09:09:49.660Z">
+<meta property="article:author" content="长安的荔枝">
+<meta property="article:tag" content="项目">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1608.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2024/10/19/3ABl2jotCSNZTVI.png"><link rel="canonical" href="https://notion-hexo.vercel.app/notion-use-center/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '用户中心项目',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-30 17:09:49'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url('https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1608.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="荔下一个Flag"><img class="site-icon" src="https://s2.loli.net/2024/10/19/3ABl2jotCSNZTVI.png"/><span class="site-name">荔下一个Flag</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">用户中心项目</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-30T09:09:49.659Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-30T09:09:49.660Z" title="更新于 2024-12-30 17:09:49">2024-12-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="用户中心项目"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h1><ul>
+<li>视频 20 未开始</li>
+</ul>
+<h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><h2 id="mybatis-与-mybatis-plus-冲突"><a href="#mybatis-与-mybatis-plus-冲突" class="headerlink" title="mybatis 与 mybatis-plus 冲突"></a>mybatis 与 mybatis-plus 冲突</h2><ul>
+<li><p><code>NoSuchMethodError:</code></p>
+<p><code>org.apache.ibatis.session.Configuration.setArgNameBasedConstructorAutoMapping(Z)</code> 这个错误表示 <code>setArgNameBasedConstructorAutoMapping</code> mybatis 中这个方法不存在</p>
+<ul>
+<li>将 mybatis 依赖删除或者更换 mybatis 依赖版本，与 mybatis-plus 依赖适配</li>
+</ul>
+</li>
+</ul>
+<h2 id="maven-无法下载依赖"><a href="#maven-无法下载依赖" class="headerlink" title="maven 无法下载依赖"></a>maven 无法下载依赖</h2><ul>
+<li>本地仓库中下载的依赖不成功，只出现 <code>.lastUpdated</code> 后缀文件，原因是网络问题</li>
+</ul>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ddd4b5f0-a409-4ae2-8ca3-61c898273cfe/69d23758-b59c-4190-b98b-a61052390f9f/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45GO43JXI4/20241024/us-west-2/s3/aws4_request&X-Amz-Date=20241024T153627Z&X-Amz-Expires=3600&X-Amz-Signature=2e29de03bcc97969093ddc92c38e29422ee1901b397d9df284743b6a6557b8bc&X-Amz-SignedHeaders=host&x-id=GetObject"></p>
+<ul>
+<li>将 IP 地址和 DNS 服务器地址设置为自动获得</li>
+</ul>
+<h2 id="Java-实体类的属性存入到数据库中自动转换为-下划线-格式"><a href="#Java-实体类的属性存入到数据库中自动转换为-下划线-格式" class="headerlink" title="Java 实体类的属性存入到数据库中自动转换为 下划线 格式"></a>Java 实体类的属性存入到数据库中自动转换为 <code>下划线</code> 格式</h2><ul>
+<li>配置示例</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">  <span class="attr">configuration:</span></span><br><span class="line">    <span class="attr">map-underscore-to-camel-case:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>默认属性值为 <code>true</code> ，启动自动转换为下划线格式</li>
+</ul>
+<h1 id="插件使用"><a href="#插件使用" class="headerlink" title="插件使用"></a>插件使用</h1><h2 id="mybatisX-插件的使用"><a href="#mybatisX-插件的使用" class="headerlink" title="mybatisX 插件的使用"></a>mybatisX 插件的使用</h2><ul>
+<li>自动生成数据库相关配置文件</li>
+<li>右键需要生成的数据库表，选择 <code>MybatisX-Generator</code></li>
+</ul>
+<p><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefinedb3784da8-cd61-4268-9c96-68815d5a104c.png"></p>
+<p><img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/ddd4b5f0-a409-4ae2-8ca3-61c898273cfe/51165ff1-c65b-4fc5-8b16-3b47608e1e0e/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45GO43JXI4/20241024/us-west-2/s3/aws4_request&X-Amz-Date=20241024T153627Z&X-Amz-Expires=3600&X-Amz-Signature=ee8fb26463d1f2aa9aaccb2280ba85c2b5fa67ea79733487ccf0affa7f1a0f30&X-Amz-SignedHeaders=host&x-id=GetObject"></p>
+<h2 id="GenerateAllSetter-插件使用"><a href="#GenerateAllSetter-插件使用" class="headerlink" title="GenerateAllSetter 插件使用"></a>GenerateAllSetter 插件使用</h2><ul>
+<li>当实体类中的属性太多，手动赋值很麻烦，使用 <code>GenerateAllSetter</code> 插件自动生成 setter 方法</li>
+</ul>
+<p><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefinedf3309e60-23fd-4c09-a06c-ce29d8d9a012.png"></p>
+<ul>
+<li>选择需要自动生成 setter 方法的实体类，按住 <code>Alt + Enter</code> ，选择不带默认值或者带默认值</li>
+</ul>
+<h2 id="Auto-filling-java-call-arguments-自动填充属性名"><a href="#Auto-filling-java-call-arguments-自动填充属性名" class="headerlink" title="Auto-filling-java-call-arguments 自动填充属性名"></a>Auto-filling-java-call-arguments 自动填充属性名</h2><ul>
+<li>在方法的括号中按 <code>Alt + Enter</code> ，点击 <code>auto fill call parameters</code> ，自动补充属性名</li>
+</ul>
+<p><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefined95025f96-9ecc-4dc5-9f5d-9abb4ce8256b.png"></p>
+<h1 id="工具类库"><a href="#工具类库" class="headerlink" title="工具类库"></a>工具类库</h1><h2 id="字符串工具类"><a href="#字符串工具类" class="headerlink" title="字符串工具类"></a>字符串工具类</h2><ul>
+<li>导入依赖</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.commons<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-lang3<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用 <code>StringUtils</code>库</li>
+<li><code>StringUtils.isAnyBlank(s1, s2, ...)</code>判断多个属性值是否为 <code>null、空字符串、空白字符</code></li>
+</ul>
+<h2 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">final</span> <span class="type">String</span> <span class="variable">SALT</span> <span class="operator">=</span> <span class="string">&quot;may&quot;</span>;  <span class="comment">// 盐</span></span><br><span class="line"><span class="type">String</span> <span class="variable">encryptPassword</span> <span class="operator">=</span> DigestUtils.md5DigestAsHex((SALT + password).getBytes());</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>DigestUtils</code> 是 &#96;&#96;org.springframework.util&#96; 库的工具类</li>
+</ul>
+<h1 id="注册逻辑"><a href="#注册逻辑" class="headerlink" title="注册逻辑"></a>注册逻辑</h1><ol>
+<li>用户在前端输入账号、密码以及校验码</li>
+<li>检验用户的账号、密码、校验密码是否符合要求</li>
+</ol>
+<ul>
+<li>非空</li>
+<li>账号长度不小于 4 位</li>
+<li>密码不小于 8 位</li>
+<li>账号不包含特殊字符</li>
+<li>账号不能重复</li>
+<li>密码和校验密码相同</li>
+</ul>
+<ol>
+<li>对密码进行加密</li>
+<li>向数据库插入用户数据</li>
+</ol>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">long</span> <span class="title function_">userRegister</span><span class="params">(String account, String password, String checkPassword)</span> &#123;</span><br><span class="line">        <span class="comment">// 1. 校验</span></span><br><span class="line">        <span class="comment">// 非空</span></span><br><span class="line">        <span class="keyword">if</span> (StringUtils.isAnyBlank(account, password, checkPassword)) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 账户长度不小于4位</span></span><br><span class="line">        <span class="keyword">if</span> (account.length() &lt; <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 密码不小于8位</span></span><br><span class="line">        <span class="keyword">if</span> (password.length() &lt; <span class="number">8</span> || checkPassword.length() &lt; <span class="number">8</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 账户不包含特殊字符</span></span><br><span class="line">        <span class="comment">// 允许字母、数字、下划线、连字符</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">validPattern</span> <span class="operator">=</span> <span class="string">&quot;^[a-zA-Z0-9_\\-]+$&quot;</span>;</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">matches</span> <span class="operator">=</span> account.matches(validPattern);</span><br><span class="line">        <span class="keyword">if</span>(!matches) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 账户不能重复</span></span><br><span class="line">        QueryWrapper&lt;User&gt; queryWrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;&gt;();</span><br><span class="line">        queryWrapper.eq(<span class="string">&quot;account&quot;</span>, account);</span><br><span class="line">        <span class="type">long</span> <span class="variable">count</span> <span class="operator">=</span> <span class="built_in">this</span>.count(queryWrapper);</span><br><span class="line">        <span class="keyword">if</span> (count &gt; <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 密码和校验密码相同</span></span><br><span class="line">        <span class="keyword">if</span> (!password.equals(checkPassword)) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 2. 加密</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">encryptPassword</span> <span class="operator">=</span> DigestUtils.md5DigestAsHex((SALT + password).getBytes());</span><br><span class="line">        <span class="comment">// 3.插入数据</span></span><br><span class="line">        <span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>();</span><br><span class="line">        user.setAccount(account);</span><br><span class="line">        user.setPassword(encryptPassword);</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">result</span> <span class="operator">=</span> <span class="built_in">this</span>.save(user);</span><br><span class="line">        <span class="keyword">if</span> (!result) &#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> user.getId();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="登录接口"><a href="#登录接口" class="headerlink" title="登录接口"></a>登录接口</h1><ul>
+<li>接受参数：用户账号、密码</li>
+<li>请求类型：POST</li>
+<li>请求体：JSON 格式的数据</li>
+<li>返回值：用户信息（脱敏）</li>
+</ul>
+<h1 id="如何知道是哪个用户登录？"><a href="#如何知道是哪个用户登录？" class="headerlink" title="如何知道是哪个用户登录？"></a>如何知道是哪个用户登录？</h1><ol>
+<li>连接服务器，得到一个 session 状态（匿名状态），返回给前端</li>
+<li>登录成功后，得到登录成功的 session 状态，并且给 session 设置一些值（比如用户信息），返回给前端一个设置 cookie 的“命令”</li>
+<li>前端接受到后端的命令后，设置 cookie，保存到浏览器中</li>
+<li>前端再次请求后端的时候（相同的域名），在请求头中带上 cookie 去请求</li>
+<li>后端拿到前端传来的 cookie，找到对应的 session</li>
+<li>后端从 session 中可以取出基于该 session 存储的变量（用户的登录信息、登录名）</li>
+</ol>
+<h1 id="登录逻辑"><a href="#登录逻辑" class="headerlink" title="登录逻辑"></a>登录逻辑</h1><ol>
+<li>用户在前端输入账号、密码</li>
+<li>检验用户的账号、密码是否符合要求</li>
+</ol>
+<ul>
+<li>非空</li>
+<li>账号长度不小于 4 位</li>
+<li>密码不小于 8 位</li>
+<li>账号不包含特殊字符</li>
+</ul>
+<ol>
+<li>对密码进行加密</li>
+<li>根据账号和密码（加密后的密码）在数据库中查询用户信息</li>
+<li>返回的用户信息进行脱敏（隐藏敏感信息，防止数据库中的字段泄露）</li>
+<li>记录用户的登录态（session），将其存储到服务器上（使用后端 SpringBoot 封装的服务器 tomcat 记录）</li>
+<li>返回脱敏后的用户信息</li>
+</ol>
+<h2 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> User <span class="title function_">doLogin</span><span class="params">(String account, String password, HttpServletRequest request)</span> &#123;</span><br><span class="line">        <span class="comment">// 1. 校验</span></span><br><span class="line">        <span class="comment">// 非空</span></span><br><span class="line">        <span class="keyword">if</span> (StringUtils.isAnyBlank(account, password)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 账户长度不小于4位</span></span><br><span class="line">        <span class="keyword">if</span> (account.length() &lt; <span class="number">4</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 密码不小于8位</span></span><br><span class="line">        <span class="keyword">if</span> (password.length() &lt; <span class="number">8</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 账户不包含特殊字符</span></span><br><span class="line">        <span class="comment">// 允许字母、数字、下划线、连字符</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">validPattern</span> <span class="operator">=</span> <span class="string">&quot;^[a-zA-Z0-9_\\-]+$&quot;</span>;</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">matches</span> <span class="operator">=</span> account.matches(validPattern);</span><br><span class="line">        <span class="keyword">if</span>(!matches) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 2. 加密</span></span><br><span class="line">        <span class="type">String</span> <span class="variable">encryptPassword</span> <span class="operator">=</span> DigestUtils.md5DigestAsHex((SALT + password).getBytes());</span><br><span class="line">        <span class="comment">// 判断用户是否为空</span></span><br><span class="line">        QueryWrapper&lt;User&gt; queryWrapper = <span class="keyword">new</span> <span class="title class_">QueryWrapper</span>&lt;&gt;();</span><br><span class="line">        queryWrapper.eq(<span class="string">&quot;account&quot;</span>, account);</span><br><span class="line">        queryWrapper.eq(<span class="string">&quot;password&quot;</span>, encryptPassword);</span><br><span class="line">        <span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> userMapper.selectOne(queryWrapper);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 用户为空</span></span><br><span class="line">        <span class="keyword">if</span> (user == <span class="literal">null</span>) &#123;</span><br><span class="line">            log.info(<span class="string">&quot;user login failed, account cannot match password&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 3.用户脱敏</span></span><br><span class="line">        <span class="type">User</span> <span class="variable">safetyUser</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">User</span>();</span><br><span class="line">        safetyUser.setId(user.getId());</span><br><span class="line">        safetyUser.setUsername(user.getUsername());</span><br><span class="line">        safetyUser.setAvatarUrl(user.getAvatarUrl());</span><br><span class="line">        safetyUser.setGender(user.getGender());</span><br><span class="line">        safetyUser.setPhone(user.getPhone());</span><br><span class="line">        safetyUser.setEmail(user.getEmail());</span><br><span class="line">        safetyUser.setStatus(user.getStatus());</span><br><span class="line">        safetyUser.setCreateTime(user.getCreateTime());</span><br><span class="line">        safetyUser.setAccount(user.getAccount());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 4.记录用户登录态</span></span><br><span class="line">        request.getSession().setAttribute(USER_LOGIN_STATE, safetyUser);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> safetyUser;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="IDEA-中使用-HTTP-Client-测试"><a href="#IDEA-中使用-HTTP-Client-测试" class="headerlink" title="IDEA 中使用 HTTP Client 测试"></a>IDEA 中使用 HTTP Client 测试</h1><p><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefinedda096bd6-11a4-45a9-a3ae-eed757b87022.png"></p>
+<h1 id="Mybatis-plus-框架"><a href="#Mybatis-plus-框架" class="headerlink" title="Mybatis-plus 框架"></a>Mybatis-plus 框架</h1><h2 id="逻辑删除"><a href="#逻辑删除" class="headerlink" title="逻辑删除"></a>逻辑删除</h2><ul>
+<li>在数据库中定义一条 isDelete 字段，0 表示逻辑未删除，1 表示逻辑删除，</li>
+<li>作用：防止恶意删除，方便开发者查看数据</li>
+</ul>
+<ol>
+<li>在 <code>application.yml</code> 中配置 Mybatis-plus 的全局删除属性</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mybatis<span class="operator">-</span>plus:</span><br><span class="line">  <span class="keyword">global</span><span class="operator">-</span>config:</span><br><span class="line">    db<span class="operator">-</span>config:</span><br><span class="line">      logic<span class="operator">-</span><span class="keyword">delete</span><span class="operator">-</span>field: deleted # 全局逻辑删除字段名</span><br><span class="line">      logic<span class="operator">-</span><span class="keyword">delete</span><span class="operator">-</span><span class="keyword">value</span>: <span class="number">1</span> # 逻辑已删除值</span><br><span class="line">      logic<span class="operator">-</span><span class="keyword">not</span><span class="operator">-</span><span class="keyword">delete</span><span class="operator">-</span><span class="keyword">value</span>: <span class="number">0</span> # 逻辑未删除值</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>在实体类中使用 <code>@TableLogin</code> 注解</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 是否删除 0-正常</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="variable">@TableLogic</span></span><br><span class="line">private <span class="type">Integer</span> isDelete;</span><br></pre></td></tr></table></figure>
+
+<h1 id="控制层-Controller-封装请求"><a href="#控制层-Controller-封装请求" class="headerlink" title="控制层 Controller 封装请求"></a>控制层 Controller 封装请求</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@RestController</span> 适用于编写 restful 风格的api，返回值默认为 json 类型</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>controller 层倾向于对请求参数本身的校验，不涉及业务逻辑本身（越少越好）</li>
+<li>service 层是对业务逻辑的校验（有可能被 controller 之外的类调用）</li>
+</ul>
+<h2 id="处理前端返回的数据"><a href="#处理前端返回的数据" class="headerlink" title="处理前端返回的数据"></a>处理前端返回的数据</h2><ul>
+<li>前端返回的数据为 json 类型</li>
+<li>创建新的类解析返回的数据</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@Data</span></span><br><span class="line">public class UserLoginRequest implements Serializable &#123;</span><br><span class="line"></span><br><span class="line">    private String account;</span><br><span class="line">    private String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>@RequestBody</code> 注解可以将前端传入的数据和 Java 实体类进行绑定</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://notion-hexo.vercel.app">长安的荔枝</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://notion-hexo.vercel.app/notion-use-center/">https://notion-hexo.vercel.app/notion-use-center/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://notion-hexo.vercel.app" target="_blank">荔下一个Flag</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%A1%B9%E7%9B%AE/">项目</a></div><div class="post_share"><div class="social-share" data-image="https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1608.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/time-test/" title="更新时间测试"><img class="cover" src="https://www.notion.so/images/page-cover/webb1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">更新时间测试</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/notion-friends/" title="伙伴匹配系统"><img class="cover" src="https://www.notion.so/images/page-cover/met_william_morris_1877_willow.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-30</div><div class="title">伙伴匹配系统</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">长安的荔枝</div><div class="author-info__description">计算机专业专科生，前后端学习ing，下一阶段：专升本</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/TXCC518"><i class="fab fa-github"></i><span>GitHub仓库地址</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%BA%A6"><span class="toc-number">1.</span> <span class="toc-text">进度</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">2.</span> <span class="toc-text">遇到的问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#mybatis-%E4%B8%8E-mybatis-plus-%E5%86%B2%E7%AA%81"><span class="toc-number">2.1.</span> <span class="toc-text">mybatis 与 mybatis-plus 冲突</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#maven-%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E4%BE%9D%E8%B5%96"><span class="toc-number">2.2.</span> <span class="toc-text">maven 无法下载依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-%E5%AE%9E%E4%BD%93%E7%B1%BB%E7%9A%84%E5%B1%9E%E6%80%A7%E5%AD%98%E5%85%A5%E5%88%B0%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2%E4%B8%BA-%E4%B8%8B%E5%88%92%E7%BA%BF-%E6%A0%BC%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">Java 实体类的属性存入到数据库中自动转换为 下划线 格式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">插件使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#mybatisX-%E6%8F%92%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.1.</span> <span class="toc-text">mybatisX 插件的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GenerateAllSetter-%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text">GenerateAllSetter 插件使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Auto-filling-java-call-arguments-%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E5%B1%9E%E6%80%A7%E5%90%8D"><span class="toc-number">3.3.</span> <span class="toc-text">Auto-filling-java-call-arguments 自动填充属性名</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E7%B1%BB%E5%BA%93"><span class="toc-number">4.</span> <span class="toc-text">工具类库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B7%A5%E5%85%B7%E7%B1%BB"><span class="toc-number">4.1.</span> <span class="toc-text">字符串工具类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A0%E5%AF%86"><span class="toc-number">4.2.</span> <span class="toc-text">加密</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E9%80%BB%E8%BE%91"><span class="toc-number">5.</span> <span class="toc-text">注册逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">5.1.</span> <span class="toc-text">代码实现</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E6%8E%A5%E5%8F%A3"><span class="toc-number">6.</span> <span class="toc-text">登录接口</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E7%9F%A5%E9%81%93%E6%98%AF%E5%93%AA%E4%B8%AA%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%EF%BC%9F"><span class="toc-number">7.</span> <span class="toc-text">如何知道是哪个用户登录？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%99%BB%E5%BD%95%E9%80%BB%E8%BE%91"><span class="toc-number">8.</span> <span class="toc-text">登录逻辑</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-1"><span class="toc-number">8.1.</span> <span class="toc-text">代码实现</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IDEA-%E4%B8%AD%E4%BD%BF%E7%94%A8-HTTP-Client-%E6%B5%8B%E8%AF%95"><span class="toc-number">9.</span> <span class="toc-text">IDEA 中使用 HTTP Client 测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Mybatis-plus-%E6%A1%86%E6%9E%B6"><span class="toc-number">10.</span> <span class="toc-text">Mybatis-plus 框架</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%88%A0%E9%99%A4"><span class="toc-number">10.1.</span> <span class="toc-text">逻辑删除</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%B1%82-Controller-%E5%B0%81%E8%A3%85%E8%AF%B7%E6%B1%82"><span class="toc-number">11.</span> <span class="toc-text">控制层 Controller 封装请求</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%89%8D%E7%AB%AF%E8%BF%94%E5%9B%9E%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-number">11.1.</span> <span class="toc-text">处理前端返回的数据</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/notion-math/" title="高数"><img src="https://www.notion.so/images/page-cover/rijksmuseum_avercamp_1608.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高数"/></a><div class="content"><a class="title" href="/notion-math/" title="高数">高数</a><time datetime="2024-12-30T09:09:49.660Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefineddc3ab2f7-66cb-4a5c-91bd-0c775b8e2aa5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"/></a><div class="content"><a class="title" href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案">Notion + Hexo + GitHub Actions + Vercel 博客解决方案</a><time datetime="2024-12-30T09:09:49.659Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解"><img src="https://www.notion.so/images/page-cover/rijksmuseum_jan_lievens_1627.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion-Hexo 的 Elog 配置详解"/></a><div class="content"><a class="title" href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解">Notion-Hexo 的 Elog 配置详解</a><time datetime="2024-12-30T09:09:49.659Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-example/" title="Notion示例文章"><img src="https://www.notion.so/images/page-cover/met_camille_pissarro_1896.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion示例文章"/></a><div class="content"><a class="title" href="/notion-example/" title="Notion示例文章">Notion示例文章</a><time datetime="2024-12-30T09:09:49.659Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-friends/" title="伙伴匹配系统"><img src="https://www.notion.so/images/page-cover/met_william_morris_1877_willow.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="伙伴匹配系统"/></a><div class="content"><a class="title" href="/notion-friends/" title="伙伴匹配系统">伙伴匹配系统</a><time datetime="2024-12-30T09:09:49.659Z" title="发表于 2024-12-30 17:09:49">2024-12-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 长安的荔枝</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
