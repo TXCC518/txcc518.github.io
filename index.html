@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>荔下一个Flag - Notion + Elog + Hexo + GitHub Actions + Vercel 博客解决方案</title><meta name="author" content="长安的荔枝"><meta name="copyright" content="长安的荔枝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Notion + Elog + Hexo + GitHub Actions + Vercel 博客解决方案">
+<meta property="og:type" content="website">
+<meta property="og:title" content="荔下一个Flag">
+<meta property="og:url" content="https://notion-hexo.vercel.app/">
+<meta property="og:site_name" content="荔下一个Flag">
+<meta property="og:description" content="Notion + Elog + Hexo + GitHub Actions + Vercel 博客解决方案">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg">
+<meta property="article:author" content="长安的荔枝">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2024/10/19/3ABl2jotCSNZTVI.png"><link rel="canonical" href="https://notion-hexo.vercel.app/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '荔下一个Flag',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-02-05 10:09:27'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://s2.loli.net/2024/10/17/w95KapJQ6ShcMPv.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="荔下一个Flag"><img class="site-icon" src="https://s2.loli.net/2024/10/19/3ABl2jotCSNZTVI.png"/><span class="site-name">荔下一个Flag</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">荔下一个Flag</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"><img class="post-bg" src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefineddc3ab2f7-66cb-4a5c-91bd-0c775b8e2aa5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"></a></div><div class="recent-post-info"><a class="article-title" href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案">Notion + Hexo + GitHub Actions + Vercel 博客解决方案</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E6%89%8B%E5%86%8C/">博客折腾手册</a></span></div><div class="content">博客工具
+写作平台：Notion
+博客平台：Hexo
+博客主题：Butterfly@4.10.0
+博客文档同步：Elog
+部署平台：Vercel
+博客仓库：https://github.com/LetTTGACO/notion-hexo
+
+博客搭建指南Fork 模板仓库点击 Fork 该模板仓库到个人 Github 账号仓库下并 clone 到本地
+安装依赖在项目根目录下运行命令安装依赖
+1npm install
+
+新建 Elog 本地调试文件在项目根目录中复制.elog.example.env文件并改名为.elog.env，此文件将用于本地同步 Notion 文档
+配置 Notion 关键信息按照文档提示配置 Notion 并获取 token 和 databaseId，在本地.elog.env中写入
+12NOTION_TOKEN=获取的tokenNOTION_DATABASE_ID=获取的databaseId
+
+本地调试在项目根目录运行同步命令
+1npm run sync:local
+
+启动 Hexo在项目根目录运行 hexo 启动命令，会自动打开本地博客
+1npm run serv ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解"><img class="post-bg" src="https://www.notion.so/images/page-cover/rijksmuseum_jan_lievens_1627.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion-Hexo 的 Elog 配置详解"></a></div><div class="recent-post-info"><a class="article-title" href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解">Notion-Hexo 的 Elog 配置详解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Elog-Notion/">Elog-Notion</a></span></div><div class="content">前言在使用 Elog 同步 Notion 上的文档时，因为是将富文本向下转成 markdown，会有很多样式损失。这是由于 markdown 样式集合＜ Notion 样式集合。所以在 Notion 上书写时，得按照 markdown 支持的样式进行写作。
+
+可以在这里 看到 Notion 文档被导出为 markdown 时的样式损失程度
+
+如果你不能接受样式损失，可能 markdown 并不适合你，隔壁 NotionNext 可能更适合你搭建博客。
+Notion 格式注意点不要使用 markdown 不支持的样式&#x2F;语法例如字体颜色、多级折叠块、书签、数据库、嵌入等。导出为 markdown 都不能正常展示。
+适当使用 markdown 形式的超链接在文档中使用 markdown 形式的超链接可以解决部分路由问题，例如链接 Notion 文档的超链接会被自动处理为非完整路径，或者手动链接到某个相对路由，可以使用以下方式解决
+12// 使用[]() markdown 超链接语法点击 [下一篇](/notion/deploy-platform) 继续配置部署平台
+
+请勿上传视频、 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/notion-example/" title="Notion示例文章"><img class="post-bg" src="https://www.notion.so/images/page-cover/met_camille_pissarro_1896.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion示例文章"></a></div><div class="recent-post-info"><a class="article-title" href="/notion-example/" title="Notion示例文章">Notion示例文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Elog-Notion/">Elog-Notion</a></span></div><div class="content">Notion-MarkdownNotion 示例文章源地址
+行内样式
+加粗
+
+斜体
+下划线
+删除线
+行内代码 const a = 123
+行内公式，在 Vitepress 会报错，不做演示
+红色的文字
+蓝色的文字背景
+绿色的块背景
+Basic block（基本块）Notion 示例文章的子页面Notion 示例文章的子页面
+
+
+
+表格标题
+备注
+
+
+
+测试 1
+啊大大
+
+
+测试 2
+const a = 123
+
+
+
+无序列表
+
+
+有序列表：事物按规律变化，也有一种不可避免的性质．这种性质就叫做必然性 1. 事物的必然性，是事物本身的性质（我们反对宿命论的是其认为这一切是受神明的支配，而不是反对事物发展中存在的不可避免的性质的事实） 1. 第三级别列表 2. 第三级别列表 2. 其决定于它自己本身发展的情况和周围的条件 1. 第三级别列表 1. 第三级别列表
+折叠块：点击展开【一级】
+
+点击展开【二级】
+
+点击展开【三级】
+
+内容文本
+
+
+
+
+
+
+123
+
+引用块引用换行引用换行
+
+
+引用 2引用 2 换行
+
+
+
+标注文本：Elog 0.4.0-beta.7 发布了！
+开放式跨平台博客解 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/time-test/" title="更新时间测试"><img class="post-bg" src="https://www.notion.so/images/page-cover/webb1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更新时间测试"></a></div><div class="recent-post-info"><a class="article-title" href="/time-test/" title="更新时间测试">更新时间测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></span></div><div class="content">更新时间10.28 更新</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/10/17/6eWDYJB7Kc5haM8.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">长安的荔枝</div><div class="author-info__description">计算机专业专科生，前后端学习ing，下一阶段：专升本</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/TXCC518"><i class="fab fa-github"></i><span>GitHub仓库地址</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"><img src="https://blog-images-1318739330.cos.ap-shanghai.myqcloud.com/undefineddc3ab2f7-66cb-4a5c-91bd-0c775b8e2aa5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion + Hexo + GitHub Actions + Vercel 博客解决方案"/></a><div class="content"><a class="title" href="/notion-hexo/" title="Notion + Hexo + GitHub Actions + Vercel 博客解决方案">Notion + Hexo + GitHub Actions + Vercel 博客解决方案</a><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解"><img src="https://www.notion.so/images/page-cover/rijksmuseum_jan_lievens_1627.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion-Hexo 的 Elog 配置详解"/></a><div class="content"><a class="title" href="/notion-notice/" title="Notion-Hexo 的 Elog 配置详解">Notion-Hexo 的 Elog 配置详解</a><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/notion-example/" title="Notion示例文章"><img src="https://www.notion.so/images/page-cover/met_camille_pissarro_1896.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Notion示例文章"/></a><div class="content"><a class="title" href="/notion-example/" title="Notion示例文章">Notion示例文章</a><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/time-test/" title="更新时间测试"><img src="https://www.notion.so/images/page-cover/webb1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="更新时间测试"/></a><div class="content"><a class="title" href="/time-test/" title="更新时间测试">更新时间测试</a><time datetime="2025-02-05T02:09:05.616Z" title="发表于 2025-02-05 10:09:05">2025-02-05</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Elog-Notion/"><span class="card-category-list-name">Elog-Notion</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE%E6%89%8B%E5%86%8C/"><span class="card-category-list-name">博客折腾手册</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/elog/" style="font-size: 1.3em; color: #99a1ac">elog</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.5em; color: #99a9bf">教程</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a> <a href="/tags/blog/" style="font-size: 1.1em; color: #999">blog</a> <a href="/tags/notion/" style="font-size: 1.5em; color: #99a9bf">notion</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-02-05T02:09:27.167Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By 长安的荔枝</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["风来疏竹，风过而竹不留声；雁度寒潭，雁去而潭不留影。故君子事来而心始现，事去而心随空。","有志者事竟成，破釜沉舟，百二秦关终属楚；苦心人天不负，卧薪尝胆，三千越甲可吞吴。","欢迎您来到荔下一个Flag的小家(❁'◡'❁)","希望您有快乐的一天，也欢迎常来荔下一个Flag的小家串串门(●'◡'●)"])
+  } else {
+    document.getElementById("subtitle").textContent = "风来疏竹，风过而竹不留声；雁度寒潭，雁去而潭不留影。故君子事来而心始现，事去而心随空。"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
